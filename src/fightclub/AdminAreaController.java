@@ -28,7 +28,7 @@ import javafx.stage.Stage;
  * @author sergio
  */
 public class AdminAreaController implements Initializable {
-
+    
     @FXML
     private void btnCreateUser(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
@@ -39,7 +39,7 @@ public class AdminAreaController implements Initializable {
         stage.setTitle("Crear Usuari");
         stage.show();
     }
-
+    
     @FXML
     private void btnModUser(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
@@ -83,7 +83,7 @@ public class AdminAreaController implements Initializable {
         stage.setTitle("Modificar Criatura");
         stage.show();
     }
-
+    
     @FXML
     private void btnModTeam(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
@@ -97,35 +97,35 @@ public class AdminAreaController implements Initializable {
     
     @FXML
     private void btnCombInd(ActionEvent event) throws Exception {
-        ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/UserArea.fxml"));
-        Stage stage = new Stage();
-        Scene scene = new Scene(parent);
-        stage.setScene(scene);
-        stage.setTitle("User Area");
-        stage.show();
+    ((Node) (event.getSource())).getScene().getWindow().hide();
+    Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CombateInd.fxml"));
+    Stage stage = new Stage();
+    Scene scene = new Scene(parent);
+    stage.setScene(scene);
+    stage.setTitle("Combate Individual");
+    stage.show();
     }
     
     @FXML
     private void btnCombTeam(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/UserArea.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CombateEq.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
-        stage.setTitle("User Area");
+        stage.setTitle("Combate Equipo");
         stage.show();
     }
     
     @FXML
     private void btnRank(ActionEvent event) throws Exception {
-        ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/UserArea.fxml"));
-        Stage stage = new Stage();
-        Scene scene = new Scene(parent);
-        stage.setScene(scene);
-        stage.setTitle("User Area");
-        stage.show();
+    ((Node) (event.getSource())).getScene().getWindow().hide();
+    Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/Ranking.fxml"));
+    Stage stage = new Stage();
+    Scene scene = new Scene(parent);
+    stage.setScene(scene);
+    stage.setTitle("Ranking");
+    stage.show();
     }
     
     @FXML
@@ -139,95 +139,11 @@ public class AdminAreaController implements Initializable {
         stage.show();
     }
     
-    @FXML
-    private void btnReturnAdmin(ActionEvent event) throws Exception {
-        ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/AdminArea.fxml"));
-        Stage stage = new Stage();
-        Scene scene = new Scene(parent);
-        stage.setScene(scene);
-        stage.setTitle("Admin Area");
-        stage.show();
-    }
-
-    @FXML
-    private Label lblMessage;
-    @FXML
-    private TextField txtUsername;
-    @FXML
-    private TextField txtPassword;
-    @FXML
-    private TextField txtLema;
-
-    @FXML
-    private void btnCreateAction(ActionEvent event) throws Exception {
-        if ((txtUsername.getText().length() == 0) || (txtPassword.getText().length() == 0) || (txtLema.getText().length() == 0) ) {
-            lblMessage.setText("Username, Password or Lema left");
-        } else {
-            ((Node) (event.getSource())).getScene().getWindow().hide();
-            Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/AdminArea.fxml"));
-            Stage stage = new Stage();
-            Scene scene = new Scene(parent);
-            stage.setScene(scene);
-            stage.setTitle("Admin Area");
-            stage.show();
-
-        }
-    }
-
-    @FXML
-    private TextField txtAtac;
-    @FXML
-    private TextField txtDefensa;
-    @FXML
-    private TextField txtRaza;
-    @FXML
-    private TextField txtMedi;
-    @FXML
-    private TextField txtHabilitat;
-    @FXML
-    private TextField txtReady;
-
-    @FXML
-    private void btnCreatePetAction(ActionEvent event) throws Exception {
-        ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/AdminArea.fxml"));
-        Stage stage = new Stage();
-        Scene scene = new Scene(parent);
-        stage.setScene(scene);
-        stage.show();
-    }
-    
-    @FXML
-    private void btnDelUserAction(ActionEvent event) throws Exception {
-        ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/AdminArea.fxml"));
-        Stage stage = new Stage();
-        Scene scene = new Scene(parent);
-        stage.setScene(scene);
-        stage.show();
-    }
-    
-    @FXML
-    private ComboBox<String> combobox;
-    
-    @FXML
-    private Label label;
-    
-    @FXML
-    private void btnComboBox(ActionEvent event)throws Exception {
-        label.setText("Selected Value: "+combobox.getValue());  
-    }
-    ObservableList<String> list = FXCollections.observableArrayList(
-        "Value-1","Value-2","Value-3","Value-4","Value-5","Value-6"
-    );
-
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        //combobox.setItems(list);
         
     }
 

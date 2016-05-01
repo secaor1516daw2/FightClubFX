@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="224.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fightclub.AdminAreaController">
+<AnchorPane id="AnchorPane" prefHeight="224.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fightclub.DelUsrController">
    <children>
       <TextField fx:id="txtUsername" layoutX="79.0" layoutY="94.0" prefHeight="30.0" promptText="Nom" />
       <Button layoutX="115.0" layoutY="155.0" mnemonicParsing="false" onAction="#btnDelUserAction" prefHeight="26.0" prefWidth="101.0" text="Esborrar">

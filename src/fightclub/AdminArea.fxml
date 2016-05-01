@@ -17,9 +17,9 @@
       <Button layoutX="84.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnDelUser" prefHeight="26.0" prefWidth="166.0" text="Eliminar Usuari" />
       <Button layoutX="84.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnCreatePet" prefHeight="26.0" prefWidth="166.0" text="Crear Criatura" />
       <Button layoutX="84.0" layoutY="210.0" mnemonicParsing="false" onAction="#btnModPet" prefHeight="26.0" prefWidth="166.0" text="Modificar Criatura" />
-      <Button layoutX="84.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnCombInd" prefHeight="26.0" prefWidth="166.0" text="Combate Individual" />
-      <Button layoutX="84.0" layoutY="270.0" mnemonicParsing="false" onAction="#btnCombTeam" prefHeight="26.0" prefWidth="166.0" text="Combate Equipo" />
-      <Button layoutX="84.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnModTeam" prefHeight="26.0" prefWidth="166.0" text="Crear Equipo" />
+      <Button layoutX="84.0" layoutY="270.0" mnemonicParsing="false" onAction="#btnCombInd" prefHeight="26.0" prefWidth="166.0" text="Combat Individual" />
+      <Button layoutX="84.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnCombTeam" prefHeight="26.0" prefWidth="166.0" text="Combat Equip" />
+      <Button layoutX="84.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnModTeam" prefHeight="26.0" prefWidth="166.0" text="Crear Equip" />
       <Button layoutX="84.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnRank" prefHeight="26.0" prefWidth="166.0" text="Ranking" />
       <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnReturnLog" prefHeight="26.0" prefWidth="35.0" text="⬅" />
    </children>
