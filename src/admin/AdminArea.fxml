@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fightclub.AdminAreaController">
+<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminAreaController">
    <children>
       <Label layoutX="108.0" layoutY="35.0" prefHeight="26.0" prefWidth="117.0" text="Admin Area" textAlignment="CENTER" textOverrun="CLIP">
          <font>

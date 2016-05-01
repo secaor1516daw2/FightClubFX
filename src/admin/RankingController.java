@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fightclub;
+package admin;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,25 +21,23 @@ import javafx.stage.Stage;
  *
  * @author sergio
  */
-public class CombateIndController implements Initializable {
+public class RankingController implements Initializable {
     
     @FXML
     private void btnReturnAdmin(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/AdminArea.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/admin/AdminArea.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
         stage.setTitle("Admin Area");
         stage.show();
     }
-    
-    /**
+     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
 }

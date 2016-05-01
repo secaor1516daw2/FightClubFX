@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fightclub;
+package admin;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -32,7 +32,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnCreateUser(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CrearUsuari.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/admin/CrearUsuari.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -43,7 +43,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnModUser(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CrearUsuari.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/admin/CrearUsuari.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -54,7 +54,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnDelUser(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/DelUser.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/admin/DelUser.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -65,7 +65,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnCreatePet(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CrearPetAdmin.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/admin/CrearPetAdmin.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -76,7 +76,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnModPet(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CrearPetAdmin.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/admin/CrearPetAdmin.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -87,7 +87,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnModTeam(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CrearEquipo.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/admin/CrearEquipo.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -98,7 +98,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnCombInd(ActionEvent event) throws Exception {
     ((Node) (event.getSource())).getScene().getWindow().hide();
-    Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CombateInd.fxml"));
+    Parent parent = FXMLLoader.load(getClass().getResource("/admin/CombateInd.fxml"));
     Stage stage = new Stage();
     Scene scene = new Scene(parent);
     stage.setScene(scene);
@@ -109,7 +109,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnCombTeam(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CombateEq.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/admin/CombateEq.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -120,7 +120,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnRank(ActionEvent event) throws Exception {
     ((Node) (event.getSource())).getScene().getWindow().hide();
-    Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/Ranking.fxml"));
+    Parent parent = FXMLLoader.load(getClass().getResource("/admin/Ranking.fxml"));
     Stage stage = new Stage();
     Scene scene = new Scene(parent);
     stage.setScene(scene);
@@ -131,7 +131,7 @@ public class AdminAreaController implements Initializable {
     @FXML
     private void btnReturnLog(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/Login.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/login/Login.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fightclub.CrearUsrController">
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.CrearUsrController">
    <children>
       <TextField fx:id="txtUsername" layoutX="78.0" layoutY="106.0" prefHeight="30.0" promptText="Nom" />
       <Button layoutX="113.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnCreateAction" prefHeight="26.0" prefWidth="101.0" text="Crear">

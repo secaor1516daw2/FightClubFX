@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.control.Button?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fightclub.CombateEqController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.CombateEqController">
    <children>
       <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="145.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />

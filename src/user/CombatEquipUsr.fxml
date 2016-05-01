@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.CombatEquipUsrController">
+       <children>
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="145.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="10.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="145.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="10.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="145.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="320.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="455.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="320.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="455.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="320.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="455.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="287.0" layoutY="185.0" text="VS">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnReturnUser" prefHeight="26.0" prefWidth="35.0" text="⬅" />
+   </children>
+</AnchorPane>

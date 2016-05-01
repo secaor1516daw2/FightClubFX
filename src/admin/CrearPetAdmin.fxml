@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fightclub.CrearPetAdminController">
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.CrearPetAdminController">
    <children>
       
       <Button layoutX="111.0" layoutY="367.0" mnemonicParsing="false" onAction="#btnCreatePetAction" prefHeight="26.0" prefWidth="101.0" text="Crear">

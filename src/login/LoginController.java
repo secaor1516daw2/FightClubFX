@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fightclub;
+package login;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,6 +15,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -23,50 +24,43 @@ import javafx.stage.Stage;
  *
  * @author sergio
  */
-public class CrearUsrController implements Initializable {
-
-    @FXML
-    private TextField txtUsername;
+public class LoginController implements Initializable {
     @FXML
     private Label lblMessage;
     @FXML
-    private TextField txtPassword;
+    private TextField txtUsername;
     @FXML
-    private TextField txtLema;
-    
+    private PasswordField txtPassword;
     @FXML
-    private void btnCreateAction(ActionEvent event) throws Exception {
-        if ((txtUsername.getText().length() == 0) || (txtPassword.getText().length() == 0) || (txtLema.getText().length() == 0) ) {
-            lblMessage.setText("Username, Password or Lema left");
-        } else {
+    private void btnLoginAction(ActionEvent event) throws Exception {
+        if(txtUsername.getText().equals("admin") && txtPassword.getText().equals("admin")){
             ((Node) (event.getSource())).getScene().getWindow().hide();
-            Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/AdminArea.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("/admin/AdminArea.fxml"));
             Stage stage = new Stage();
             Scene scene = new Scene(parent);
             stage.setScene(scene);
             stage.setTitle("Admin Area");
             stage.show();
-
+        }else if(txtUsername.getText().equals("user") && txtPassword.getText().equals("user")){
+            ((Node) (event.getSource())).getScene().getWindow().hide();
+            Parent parent = FXMLLoader.load(getClass().getResource("/user/UserArea.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(parent);
+            stage.setScene(scene);
+            stage.setTitle("User Area");
+            stage.show();
+        }else{
+            lblMessage.setText("Username or Password invalid");
         }
+        
     }
     
-    @FXML
-    private void btnReturnAdmin(ActionEvent event) throws Exception {
-        ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/AdminArea.fxml"));
-        Stage stage = new Stage();
-        Scene scene = new Scene(parent);
-        stage.setScene(scene);
-        stage.setTitle("Admin Area");
-        stage.show();
-    }
-    
-     /**
+    /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    } 
+    }    
     
 }

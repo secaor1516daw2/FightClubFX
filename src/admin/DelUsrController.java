@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fightclub;
+package admin;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -30,7 +30,7 @@ public class DelUsrController implements Initializable {
     @FXML
     private void btnDelUserAction(ActionEvent event) throws Exception {
     ((Node) (event.getSource())).getScene().getWindow().hide();
-    Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/AdminArea.fxml"));
+    Parent parent = FXMLLoader.load(getClass().getResource("/admin/AdminArea.fxml"));
     Stage stage = new Stage();
     Scene scene = new Scene(parent);
     stage.setScene(scene);
@@ -40,7 +40,7 @@ public class DelUsrController implements Initializable {
     @FXML
     private void btnReturnAdmin(ActionEvent event) throws Exception {
     ((Node) (event.getSource())).getScene().getWindow().hide();
-    Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/AdminArea.fxml"));
+    Parent parent = FXMLLoader.load(getClass().getResource("/admin/AdminArea.fxml"));
     Stage stage = new Stage();
     Scene scene = new Scene(parent);
     stage.setScene(scene);

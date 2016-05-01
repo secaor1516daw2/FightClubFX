@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fightclub;
+package user;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -34,7 +34,7 @@ public class UserAreaController implements Initializable {
     @FXML
     private void btnCreatePet(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CrearPetUsr.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/user/CrearPetUsr.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -45,7 +45,7 @@ public class UserAreaController implements Initializable {
     @FXML
     private void btnModPet(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/CrearPetUsr.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/user/CrearPetUsr.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -56,7 +56,7 @@ public class UserAreaController implements Initializable {
     @FXML
     private void btnModTeam(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/UserArea.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/user/CrearEquipUsr.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -65,9 +65,41 @@ public class UserAreaController implements Initializable {
     }
     
     @FXML
+    private void btnCombInd(ActionEvent event) throws Exception {
+    ((Node) (event.getSource())).getScene().getWindow().hide();
+    Parent parent = FXMLLoader.load(getClass().getResource("/user/CombatIndUsr.fxml"));
+    Stage stage = new Stage();
+    Scene scene = new Scene(parent);
+    stage.setScene(scene);
+    stage.setTitle("Combate Individual");
+    stage.show();
+    }
+    
+    @FXML
+    private void btnCombTeam(ActionEvent event) throws Exception {
+        ((Node) (event.getSource())).getScene().getWindow().hide();
+        Parent parent = FXMLLoader.load(getClass().getResource("/user/CombatEquipUsr.fxml"));
+        Stage stage = new Stage();
+        Scene scene = new Scene(parent);
+        stage.setScene(scene);
+        stage.setTitle("Combate Equipo");
+        stage.show();
+    }
+    
+    @FXML
+    private void btnRank(ActionEvent event) throws Exception {
+    ((Node) (event.getSource())).getScene().getWindow().hide();
+    Parent parent = FXMLLoader.load(getClass().getResource("/user/RankingUsr.fxml"));
+    Stage stage = new Stage();
+    Scene scene = new Scene(parent);
+    stage.setScene(scene);
+    stage.setTitle("Ranking");
+    stage.show();
+    }
+    @FXML
     private void btnReturnLog(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/Login.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/login/Login.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);

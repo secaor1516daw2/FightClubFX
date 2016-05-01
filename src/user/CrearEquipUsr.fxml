@@ -7,9 +7,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fightclub.CrearEquipoController">
-   <children>
-       <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnReturnAdmin" prefHeight="26.0" prefWidth="35.0" text="⬅" />
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.CrearEquipUsrController">
+     <children>
       <ComboBox fx:id="comboBox" layoutX="398.0" layoutY="37.0" prefWidth="150.0" promptText="Seleccionar" />
       <Button layoutX="442.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnComboBox" text="Button" />
       <Label layoutX="390.0" layoutY="70.0" prefHeight="16.0" prefWidth="173.0">
@@ -17,7 +16,7 @@
             <Font size="12.0" />
          </font>
       </Label>
-      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnReturnAdmin" prefHeight="26.0" prefWidth="35.0" text="⬅" />
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnReturnUser" prefHeight="26.0" prefWidth="35.0" text="⬅" />
       <ImageView fitHeight="125.0" fitWidth="145.0" layoutX="10.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="125.0" fitWidth="145.0" layoutX="155.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="125.0" fitWidth="145.0" layoutX="300.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
@@ -27,5 +26,5 @@
       <ImageView fitHeight="125.0" fitWidth="145.0" layoutX="155.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="125.0" fitWidth="145.0" layoutX="300.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="125.0" fitWidth="145.0" layoutX="445.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true" />
-   </children>
+   </children>  
 </AnchorPane>

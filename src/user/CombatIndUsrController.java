@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fightclub;
+package user;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,7 +14,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -22,23 +21,12 @@ import javafx.stage.Stage;
  *
  * @author sergio
  */
-public class CrearPetUsrController implements Initializable {
-    
-    @FXML
-    private void btnCreatePetAction(ActionEvent event) throws Exception {
-        ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/UserArea.fxml"));
-        Stage stage = new Stage();
-        Scene scene = new Scene(parent);
-        stage.setScene(scene);
-        stage.setTitle("User Area");
-        stage.show();
-    }
+public class CombatIndUsrController implements Initializable {
     
     @FXML
     private void btnReturnUser(ActionEvent event) throws Exception {
         ((Node) (event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/fightclub/UserArea.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/user/UserArea.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
@@ -46,12 +34,12 @@ public class CrearPetUsrController implements Initializable {
         stage.show();
     }
     
-        /**
+    /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }
+    }    
     
 }
