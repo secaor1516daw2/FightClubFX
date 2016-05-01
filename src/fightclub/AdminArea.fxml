@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fightclub.AdminAreaController">
+   <children>
+      <Label layoutX="108.0" layoutY="35.0" prefHeight="26.0" prefWidth="117.0" text="Admin Area" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="84.0" layoutY="90.0" mnemonicParsing="false" onAction="#btnCreateUser" prefHeight="26.0" prefWidth="166.0" text="Crear Usuari" />
+      <Button layoutX="84.0" layoutY="120.0" mnemonicParsing="false" onAction="#btnModUser" prefHeight="26.0" prefWidth="166.0" text="Modificar Usuari" />
+      <Button layoutX="84.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnDelUser" prefHeight="26.0" prefWidth="166.0" text="Eliminar Usuari" />
+      <Button layoutX="84.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnCreatePet" prefHeight="26.0" prefWidth="166.0" text="Crear Criatura" />
+      <Button layoutX="84.0" layoutY="210.0" mnemonicParsing="false" onAction="#btnModPet" prefHeight="26.0" prefWidth="166.0" text="Modificar Criatura" />
+      <Button layoutX="84.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnCombInd" prefHeight="26.0" prefWidth="166.0" text="Combate Individual" />
+      <Button layoutX="84.0" layoutY="270.0" mnemonicParsing="false" onAction="#btnCombTeam" prefHeight="26.0" prefWidth="166.0" text="Combate Equipo" />
+      <Button layoutX="84.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnModTeam" prefHeight="26.0" prefWidth="166.0" text="Crear Equipo" />
+      <Button layoutX="84.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnRank" prefHeight="26.0" prefWidth="166.0" text="Ranking" />
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnReturnLog" prefHeight="26.0" prefWidth="35.0" text="⬅" />
+   </children>
+</AnchorPane>

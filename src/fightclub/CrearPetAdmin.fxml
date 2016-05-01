@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fightclub.AdminAreaController">
+   <children>
+      
+      <Button layoutX="111.0" layoutY="367.0" mnemonicParsing="false" onAction="#btnCreatePetAction" prefHeight="26.0" prefWidth="101.0" text="Crear">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="83.0" layoutY="29.0" prefHeight="28.0" prefWidth="171.0" text="Crear Criatura">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="81.0" layoutY="81.0" prefHeight="30.0" promptText="Nom" />
+      <TextField fx:id="txtAtac" layoutX="81.0" layoutY="121.0" prefHeight="30.0" promptText="Atac" />
+      <TextField fx:id="txtDefensa" layoutX="81.0" layoutY="161.0" prefHeight="30.0" promptText="Defensa" />
+      <TextField fx:id="txtRace" layoutX="81.0" layoutY="201.0" prefHeight="30.0" promptText="Raça" />
+      <TextField fx:id="txtMedi" layoutX="81.0" layoutY="241.0" prefHeight="30.0" promptText="Medi" />
+      <TextField fx:id="txtHabilitat" layoutX="81.0" layoutY="281.0" prefHeight="30.0" promptText="Habilitat" />
+      <TextField fx:id="txtReady" layoutX="81.0" layoutY="321.0" prefHeight="30.0" promptText="Ready" />
+      <CheckBox layoutX="22.0" layoutY="413.0" mnemonicParsing="false" text="Editar" />
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="35.0" text="⬅" />
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnReturnAdmin" prefHeight="26.0" prefWidth="35.0" text="⬅" />
+   </children>
+</AnchorPane>
